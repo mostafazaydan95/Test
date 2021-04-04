@@ -1,0 +1,50 @@
+<odoo>
+
+
+<record id="tree_configurator_tree" model="ir.ui.view">
+    <field name="name">tree.configurator.tree</field>
+    <field name="model">tree.configurator</field>    
+    <field name="arch" type="xml">
+    <tree string="Tree Configurator">
+      <field name="year" />
+      <field name="production_per_tree" />
+      <field name="price_per_kilo" />
+    </tree>
+    </field>
+</record>
+
+<record id="tree_configurator_form" model="ir.ui.view">
+    <field name="name">tree.configurator.form</field>
+    <field name="model">tree.configurator</field>    
+    <field name="arch" type="xml">
+<form string="Tree Configurator">
+  <sheet>
+      <group>
+        <group string="Project Details">
+          <field name="project_id" readonly="1"/>
+          <field name="year"/>
+          <field name="production_per_tree"/>
+          <field name="price_per_kilo"/>
+          <field name="currency_id" invisible="1"/>
+          <field name="donum_production"/>
+          <field name="total_land_production"/>
+          <field name="land_income"/>
+        </group>
+
+        <group string="Profit &amp; Expenses Details">          
+          <field name="administrative_expenses"/>
+          <field name="other_expenses"/>
+          <field name="agricultural_tax_id"/>
+          <field name="profit_before_tax"/>
+          <field name="profit_after_tax"/>
+          <field name="tom_projects_profit"/>
+          <field name="owner_land_profit"/>
+        </group>
+
+      </group>
+      </sheet>
+    </form>
+    </field>
+</record>
+
+</odoo>
