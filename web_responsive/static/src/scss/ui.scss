@@ -1,0 +1,24 @@
+// Shared with web client and login screen
+.o_home_menu_background {
+    background: url(/web_responsive/static/src/img/home-menu-bg-overlay.svg),
+        linear-gradient(to right bottom, #6a961f, #6a961f);
+    background-size: cover;
+}
+
+.o_main_navbar{
+	background-color: #6a961f !important;
+	border-bottom: 1px solid #6a961f !important;
+}
+
+.o_main_navbar > ul > li > a:hover {
+    background-color: #6a961f !important;
+}
+
+.o_main_navbar > a:hover{
+	background-color: #6a961f !important;
+	color: inherit;
+}
+
+.o_searchview .o_searchview_facet .o_searchview_facet_label {
+    background-color: #6a961f !important;
+}
